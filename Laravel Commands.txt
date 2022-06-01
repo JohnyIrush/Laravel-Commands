@@ -8,6 +8,10 @@ php artisan make:Controller User\UserManagerController -
 
 php artisan make:model FileUpload --all
 
+<--> COMPOSER <-->
+
+composer clear-cache
+php composer.phar clear-cache
 
 
 
