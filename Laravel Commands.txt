@@ -1,5 +1,17 @@
-php artisan migrate:fresh
-php artisan migrate
+-> Database/Migrations/seeding/factory
+
+- php artisan migrate:fresh
+- php artisan db:seed
+- php artisan migrate:fresh
+
+- User::factory()->count(50)->create()
+-- User::all()->map(function ($user) {
+    return $user->name;
+});
+
+- php artisan tinker
+
+
 php artisan serve
 php artisan make:Controller File\FileManagerController -
 php artisan make:model FileManager --all
@@ -7,6 +19,34 @@ php artisan make:model FileManager --all
 php artisan make:Controller User\UserManagerController -
 
 php artisan make:model FileUpload --all
+
+- php artisan
+- php artisan vendor:publish
+- php artisan make:event \packages\inteliinstaller\src\Events\
+- php artisan vendor:publish
+- composer remove softwarescares/safaricomdaraja
+- composer install
+- git branch development
+
+
+<--PACKAGES-->
+- php artisan make:provider ../../packages/inteliteam/src/InteliTeamServiceProvider
+- php artisan make:provider ../../packages/intelifinance/src/InteliFinanceServiceProvider
+- php artisan make:model ../../packages/intelifinance/src/Models/Paypal --all
+- php artisan make:model ../../packages/intelifinance/src/Models/InteliPayment --all
+- php artisan make:provider ../../packages/intelifinance/src/app/Providers/InteliEventServiceProvider
+- php artisan make:provider ../../packages/inteliresource/src/app/Providers/InteliResourceServiceProvider
+
+
+<--EVENTS-->
+
+- php artisan generate:event
+
+
+Storage/Files
+- php artisan storage:link
+- composer require league/flysystem-ftp "^3.0"
+-composer require league/flysystem-sftp-v3 "^3.0"
 
 
 
