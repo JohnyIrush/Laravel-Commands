@@ -3,6 +3,8 @@
 - php artisan migrate:fresh
 - php artisan db:seed
 - php artisan migrate:fresh
+- php artisan make:seed UserSeeder
+
 
 - User::factory()->count(50)->create()
 -- User::all()->map(function ($user) {
@@ -16,9 +18,9 @@ php artisan serve
 php artisan make:Controller File\FileManagerController -
 php artisan make:model FileManager --all
 
-php artisan make:Controller User\UserManagerController -
+php artisan make:Controller UserManagerController -
 
-php artisan make:model FileUpload --all
+php artisan make:model PermissionRole --all
 
 <--> COMPOSER <-->
 
