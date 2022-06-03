@@ -26,7 +26,6 @@ composer clear-cache
 php composer.phar clear-cache
 
 - php artisan
-- php artisan vendor:publish
 - php artisan make:event \packages\inteliinstaller\src\Events\
 - php artisan vendor:publish
 - composer remove softwarescares/safaricomdaraja
@@ -56,4 +55,11 @@ Storage/Files
 
 
 
+<-->VENDOR PUBLISH<-->
+- php artisan vendor:publish
 
+<-->CACHE, CONFIG, OPTIMIZE<-->
+
+ php artisan optimize:clear
+ 
+ php artisan config:clear
